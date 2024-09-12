@@ -1,0 +1,94 @@
+INSERT INTO Users (UserID, Username, FirstName, LastName, DateOfBirthYear, Password)
+VALUES 
+(1, 'johnsmith', 'John', 'Smith', 2002, 'password123'),
+(2, 'janedoe', 'Jane', 'Doe', 1995, 'passJane1'),
+(3, 'billybob', 'Billy', 'Bob', 2008, 'billyPass'),
+(4, 'sarahconnor', 'Sarah', 'Connor', 2003, 'sarahT1000'),
+(5, 'michaeljordan', 'Michael', 'Jordan', 2011, 'jumpman23'),
+(6, 'maryjohnson', 'Mary', 'Johnson', 2007, 'maryJPass'),
+(7, 'davidlee', 'David', 'Lee', 2020, 'davidPass'),
+(8, 'lindabrown', 'Linda', 'Brown', 2014, 'linda123'),
+(9, 'robertwhite', 'Robert', 'White', 2001, 'robertPass'),
+(10, 'patriciablack', 'Patricia', 'Black', 2018, 'patricia987'),
+(11, 'danieltaylor', 'Daniel', 'Taylor', 2005, 'danTay22'),
+(12, 'laurawatson', 'Laura', 'Watson', 2023, 'lauraWatson'),
+(13, 'charleslee', 'Charles', 'Lee', 2010, 'charlesL'),
+(14, 'sandrabrown', 'Sandra', 'Brown', 2016, 'sandyB'),
+(15, 'kevinjohnson', 'Kevin', 'Johnson', 2009, 'kevinJ'),
+(16, 'katieharris', 'Katie', 'Harris', 2019, 'katH'),
+(17, 'natalieadams', 'Natalie', 'Adams', 2021, 'natA12'),
+(18, 'stevewilson', 'Steve', 'Wilson', 2024, 'steveW'),
+(19, 'rachelgreen', 'Rachel', 'Green', 2004, 'rachelG'),
+(20, 'jamesmiller', 'James', 'Miller', 2017, 'jamesM');
+
+
+INSERT INTO Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted)
+VALUES 
+(1, 1, 2, TRUE),
+(2, 1, 3, TRUE),
+(3, 1, 4, FALSE),
+(4, 2, 5, TRUE),
+(5, 2, 6, TRUE),
+(6, 3, 7, TRUE),
+(7, 3, 8, TRUE),
+(8, 4, 9, TRUE),
+(9, 4, 10, FALSE),
+(10, 5, 11, TRUE),
+(11, 6, 12, TRUE),
+(12, 7, 13, TRUE),
+(13, 8, 14, TRUE),
+(14, 9, 15, TRUE),
+(15, 10, 16, TRUE),
+(16, 11, 17, FALSE),
+(17, 12, 18, TRUE),
+(18, 13, 19, TRUE),
+(19, 14, 20, TRUE),
+(20, 15, 1, FALSE);
+
+INSERT INTO Groups (GroupID, GroupName, CreatedBy)
+VALUES 
+(1, 'Friends Forever', 1),
+(2, 'Movie Club', 2),
+(3, 'Hiking Enthusiasts', 3),
+(4, 'Music Lovers', 4),
+(5, 'Book Readers', 5),
+(6, 'Travel Buddies', 6),
+(7, 'Fitness Fanatics', 7),
+(8, 'Gaming Crew', 8),
+(9, 'Foodies', 9),
+(10, 'Photography Club', 10),
+(11, 'Tech Geeks', 11),
+(12, 'Yoga Group', 12),
+(13, 'Cycling Squad', 13),
+(14, 'Running Club', 14),
+(15, 'Dance Team', 15),
+(16, 'Fashionistas', 16),
+(17, 'Sports Fans', 17),
+(18, 'Art Lovers', 18),
+(19, 'Pet Owners', 19),
+(20, 'Gardening Group', 20);
+
+
+INSERT INTO Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID)
+VALUES 
+(1, 'Had a great day hiking!', 1, TRUE, FALSE, 3),
+(2, 'New movie recommendations?', 2, TRUE, FALSE, 2),
+(3, 'Looking for new music', 3, TRUE, FALSE, 4),
+(4, 'Book club meeting tomorrow', 4, TRUE, TRUE, 5),
+(5, 'Travel suggestions?', 5, TRUE, TRUE, 6),
+(6, 'Workout routines?', 6, TRUE, FALSE, 7),
+(7, 'Best games to play?', 7, TRUE, FALSE, 8),
+(8, 'New restaurant in town', 8, TRUE, TRUE, 9),
+(9, 'Photography contest next week!', 9, TRUE, FALSE, 10),
+(10, 'Tech trends for 2024?', 10, TRUE, TRUE, 11),
+(11, 'New yoga poses to try', 11, TRUE, FALSE, 12),
+(12, 'Cycling route suggestions', 12, TRUE, TRUE, 13),
+(13, 'Anyone up for a run tomorrow?', 13, TRUE, FALSE, 14),
+(14, 'Dance practice this weekend', 14, TRUE, TRUE, 15),
+(15, 'Fashion tips for the summer', 15, TRUE, FALSE, 16),
+(16, 'Football match this weekend!', 16, TRUE, TRUE, 17),
+(17, 'Art exhibition next month', 17, TRUE, FALSE, 18),
+(18, 'Pet owners meetup tomorrow', 18, TRUE, TRUE, 19),
+(19, 'Gardening tips?', 19, TRUE, TRUE, 20),
+(20, 'Friendship is everything', 20, TRUE, FALSE, 1);
+
